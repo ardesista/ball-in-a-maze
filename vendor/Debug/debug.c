@@ -75,7 +75,7 @@ void Delay_Ms(uint32_t n)
 
     SysTick->CTLR &= ~(1 << 0);
 }
-
+#if 0
 /*********************************************************************
  * @fn      USART_Printf_Init
  *
@@ -264,3 +264,4 @@ int _fstat(int fd, struct stat *statbuf)
     }
     return -1;
 }
+#endif
